@@ -2,10 +2,11 @@ require 'rubygems'
 require 'sinatra'
 require_relative './ruby-danfe/lib/ruby_danfe'
 
+configure { set :server, :puma }
+
 post '/' do
   file = params[:file]
-  request_time = Time.now.to_f * 1000
-  filename = "/tmp/#{request_time}_#{file[:filename]}.pdf"
+  filename = "/tmp/#{Time.now.to_f * 1000}_#{file[:filename]}.pdf"
   RubyDanfe.generate(filename, file[:tempfile])
   send_file filename, type: :pdf
 end
