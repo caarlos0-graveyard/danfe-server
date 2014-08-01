@@ -25,4 +25,9 @@ jruby server.rb
 # Performance
 
 The lib used to generate the PDF is slow. In my machine (i5, 8Gb RAM, SSD) it
-takes 8 seconds just to convert from XML to PDF.
+takes 8 seconds just to convert from XML to PDF (for an example NFe, some may
+be faster).
+
+# Production
+
+You can easily put this in heroku. Just create the app, add the remote and push.
