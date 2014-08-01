@@ -1,0 +1,35 @@
+PATH
+  remote: ./ruby-danfe
+  specs:
+    ruby_danfe (0.11.5)
+      barby
+      nokogiri
+      prawn (~> 1.0.0)
+      rake
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    barby (0.6.1)
+    nokogiri (1.6.3.1-java)
+    pdf-core (0.2.5)
+    prawn (1.0.0)
+      pdf-core (~> 0.2.2)
+      ttfunk (~> 1.1.1)
+    rack (1.5.2)
+    rack-protection (1.5.3)
+      rack
+    rake (10.3.2)
+    sinatra (1.4.5)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    tilt (1.4.1)
+    ttfunk (1.1.1)
+
+PLATFORMS
+  java
+
+DEPENDENCIES
+  ruby_danfe!
+  sinatra

@@ -1,0 +1,3 @@
+[submodule "ruby-danfe"]
+	path = ruby-danfe
+	url = git@github.com:caarlos0/ruby_danfe.git
