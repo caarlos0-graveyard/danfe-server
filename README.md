@@ -13,13 +13,14 @@ curl -X POST http://danfe-server.herokuapp.com/ -F "file=@nota.xml" -o danfe.pdf
 Install jRuby (1.7.13) and run:
 
 ```sh
-jruby -S gem install bundler && jruby -S bundle install
+$ git submodules init && git submodules update
+$ jruby -S gem install bundler && jruby -S bundle install
 ```
 
 Then, to run it, simply do a
 
 ```sh
-jruby server.rb
+$ jruby server.rb
 ```
 
 # Performance
