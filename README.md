@@ -6,7 +6,7 @@ Brazilian DANFE generator "as a Service" (because buzzwords)
 # Usage
 
 ```sh
-curl -X POST http://danfe-server.herokuapp.com/ -F "file=@nota.xml" -o danfe.pdf
+$ curl -X POST http://danfe-server.herokuapp.com/ -F "file=@nota.xml" -o danfe.pdf
 ```
 # Run locally
 
