@@ -11,11 +11,18 @@ GEM
   remote: http://rubygems.org/
   specs:
     barby (0.6.1)
+    haml (4.0.5)
+      tilt
+    mini_portile (0.6.0)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     nokogiri (1.6.3.1-java)
     pdf-core (0.2.5)
     prawn (1.0.0)
       pdf-core (~> 0.2.2)
       ttfunk (~> 1.1.1)
+    puma (2.9.0)
+      rack (>= 1.1, < 2.0)
     puma (2.9.0-java)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
@@ -33,6 +40,7 @@ PLATFORMS
   java
 
 DEPENDENCIES
+  haml
   puma
   ruby_danfe!
   sinatra

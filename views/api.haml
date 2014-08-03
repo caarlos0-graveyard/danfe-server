@@ -1,0 +1,23 @@
+%h1 API
+%p
+  A utilização desse serviço como uma API é bastante simples!
+  É necessário apenas fazer uma chamada HTTP para esta URL,
+  passando em um parametro de nome <kbd>file</kbd> o arquivo <kbd>.xml</kbd>
+  da NF-e em questão.
+  O serviço retornará o arquivo DANFE em formato PDF.
+%p Exemplo de chamada utilizando <kbd>cURL</kbd>:
+%pre
+  $ curl -X POST http://danfe-server.herokuapp.com -F "file=@nota.xml" -o danfe.pdf
+%p
+%p
+  Verifique também os links no rodapé. Lá você vai encontrar informações
+  importantes sobre como este serviço funciona.
+%hr
+%h4 Notas:
+%ol
+  %li
+    Você pode utilizar esta API gratuitamente, desde que deixe claro para
+    usuários que está fazendo isso.
+  %li
+    Que fique claro, entretanto, que este serviço não possui garantia nenhuma
+    de disponibilidade e/ou tempo de resposta.

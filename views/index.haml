@@ -1,0 +1,12 @@
+%h1 Gerador de DANFE
+%p
+  Gere facilmente a DANFE de sua nota fiscal eletrônica de produto.
+  É só fazer o upload do arquivo <kbd>.xml</kbd> da dela aqui!
+%hr
+- unless message.empty?
+  %div.alert.alert-danger(role='alert')= message
+%form.form-horizontal(method='post' enctype='multipart/form-data' role='form')
+  %div.form-group
+    %input.input-lg(type='file' name='file')
+  %p
+  %input.btn.btn-lg.btn-primary(type='submit' value='Gerar DANFE')

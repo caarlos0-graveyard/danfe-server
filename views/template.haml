@@ -1,0 +1,29 @@
+%html
+  %head
+    %title Gerador de DANFE
+    %link{:href=>"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel=>"stylesheet"}
+    %link{:href=>"/stylesheets/bootstrap.flat.min.css", :rel=>"stylesheet"}
+  %body{ :style => 'padding-top: 70px'}
+    %nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+      %div.container
+        %a.navbar-brand(href='/') Gerador de DANFE
+        %ul.nav.navbar-nav
+          %li
+            %a(href='/') Home
+          %li
+            %a(href='/api') API
+    %div.container
+      %div.jumbotron
+        =yield
+      %footer.text-center
+        %p
+          Por
+          %a(href='http://carlosbecker.com') Carlos A Becker
+          utilizando a biblioteca
+          %a(href='https://github.com/taxweb/ruby_danfe')
+            ruby_danfe
+        %p
+          Código fonte hospedado em
+          %a(href='http://github.com/caarlos0/danfe-server') Github
+          e aplicação em
+          %a(href='http://danfe-server.herokuapp.com') Heroku
