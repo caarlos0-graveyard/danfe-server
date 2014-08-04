@@ -11,7 +11,7 @@ get '/' do
 end
 
 get '/api' do
-  haml :api, locals: { message: '' }, layout: :template
+  haml :api, layout: :template
 end
 
 post '/' do
