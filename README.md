@@ -13,7 +13,6 @@ $ curl -X POST http://danfe-server.herokuapp.com/ -F "file=@nota.xml" -o danfe.p
 Install jRuby (1.7.13) and run:
 
 ```sh
-$ git submodules init && git submodules update
 $ jruby -S gem install bundler && jruby -S bundle install
 ```
 
