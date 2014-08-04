@@ -2,7 +2,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
-require_relative './ruby-danfe/lib/ruby_danfe'
+require 'ruby_danfe'
 configure { set :server, :puma }
 set :haml, :format => :html5
 
