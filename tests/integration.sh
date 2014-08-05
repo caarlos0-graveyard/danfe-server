@@ -10,7 +10,7 @@ echo "Testing against ${server}..."
 for xml in danfe.xml nfe_simples_nacional.xml nfe_with_ns.xml \
   nfce.xml nfe_with_fci.xml nfe_without_ns.xml; do
   curl -X POST ${server} \
-    -F "file=@./ruby-danfe/test/${xml}" \
+    -F "file=@./tests/fixures/${xml}" \
     -o ./tmp/${xml}.pdf -s 2>/dev/null &
   PIDS="${PIDS} $!"
 done
