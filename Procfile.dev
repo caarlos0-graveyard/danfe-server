@@ -1,0 +1,2 @@
+web: jruby -G server.rb -p $PORT
+redis: redis-server

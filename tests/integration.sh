@@ -3,7 +3,7 @@
 [ -d $@ ] && server="http://danfe-server.herokuapp.com" || server="$@"
 
 echo "Cleaning up..."
-[ -d tmp ] && rm -rf tmp/* || mkdir tmp/
+[ -d tmp ] && rm -rf tmp || mkdir tmp/
 PIDS=""
 
 echo "Testing against ${server}..."
